@@ -1,0 +1,66 @@
+[data-theme="light"] {
+  --header-bg-color: rgb(190, 213, 210);
+  --h1-color: rgb(16, 16, 16);
+  --footer-bg-color: rgb(225, 212, 227);
+  --footer-color: rgb(22, 20, 23);
+  --main-bg-color: rgb(255, 254, 241);
+  --main-text-color: rgb(28, 28, 28);
+}
+[data-theme="dark"] {
+  --header-bg-color: rgb(32, 35, 35);
+  --h1-color: rgb(233, 225, 225);
+  --footer-bg-color: rgb(30, 25, 31);
+  --footer-color: rgb(225, 212, 227);
+  --main-bg-color: rgb(39, 39, 39);
+  --main-text-color: rgb(228, 228, 228);
+}
+[data-theme="hawaii"] {
+  --header-bg-color: rgb(41, 240, 213);
+  --h1-color: rgb(255, 73, 249);
+  --footer-bg-color: rgb(209, 96, 227);
+  --footer-color: rgb(66, 29, 98);
+  --main-bg-color: rgb(168, 255, 184);
+  --main-text-color: rgb(45, 84, 223);
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  background-color: var(--main-bg-color);
+  height: 100%;
+}
+
+main p {
+  color: var(--main-text-color);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--header-bg-color);
+  padding: 1rem;
+}
+
+select {
+  height: 100%;
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+h1 {
+  color: var(--h1-color);
+}
+
+footer {
+  background-color: var(--footer-bg-color);
+  margin-top: auto;
+}
+
+footer h2 {
+  color: var(--footer-color);
+}
